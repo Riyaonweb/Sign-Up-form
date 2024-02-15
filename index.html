@@ -14,24 +14,40 @@
             Sign up now to get started</p><br>
             <p style="margin-right:50px; margin-left: 50px;">You <em>know</em> you want to</p><br>
             <h4 style="margin-right:50px; margin-left: 50px;">Let's do this!</h4>
-            <div id="form-conatiner"> <form action="" method="get">
-                <label for="firstname">First name</label>
-                <input type="text" name="firstname">
-                <label for="lastname">Last name</label>
-                <input type="text" name="lastname">
-                <label for="email">Email</label>
-                <input type="email" name="email">
-                <label for="phoneno">Phone Number</label>
-                <input type="tel" name="phoneno">
-                <label for="password">Password</label>
-                <input type="password" name="password" class="error">
-                <label for="con-pass">Confirm Password</label>
-                <input type="password" name="con-pass">  
+            <br>
+            <div id="form-conatiner"> 
+                <form action="" method="get" id="form-block">
+                <section>
+                    <div> <label for="firstname">First name</label>
+                        <input type="text" name="firstname" required/></div>
+               <div>  <label for="lastname">Last name</label>
+                <input type="text" name="lastname" required/></div>
+              
+               
+            </section>
+            <section>
+                <div><label for="email">Email</label>
+                    <input type="email" name="email" required/></div>
+                <div><label for="phoneno">Phone Number</label>
+                    <input type="tel" name="phoneno" required/></div>
+                
+               
+            </section>
+            <section>
+                <div id="passpa"> <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required/>
+                </div>
+               <div><label for="con-pass">Confirm Password</label>
+                <input type="password" name="con-pass" id="con-pass"> </div>
+                 
+            </section>
+            <input type="submit" id="submit" value="Create Account"></input>
             </form></div>
            
-            <button type="submit">Create Account</button>
+           
             <p id="sub">Already have an account? <a>Log in</a></p>
         </div>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
